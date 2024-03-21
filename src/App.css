@@ -1,0 +1,185 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 50px;
+    background-color: #181717;
+}
+
+nav a {
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: #b934ca;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin: 5px;
+    flex-wrap: wrap;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    padding: 15px;
+    border-radius: 45px;
+    border: #b934ca 5px solid;
+}
+
+.login-form h1 {
+    text-align: center;
+    color: #646cff;
+}
+
+.login-form label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.login-form input {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.login-form button {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.task-card {
+    display: flex;
+    border-radius: 25px;
+    border: #646cff 5px solid;
+    padding: 15px;
+    margin: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.task-card h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    border: #646cff 2px solid;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #646cff;
+}
+
+.task-card button {
+    margin: 5px;
+}
+
+.done {
+    border: #b934ca 5px solid;
+}
+
+.no-done {
+    border: #646cff 2px solid;
+}
+
+.done h3 {
+    background-color: #b934ca;
+}
+
+.create-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    padding: 15px;
+    border-radius: 45px;
+    border: #b934ca 5px solid;
+}
+
+.create-form h1 {
+    color: #646cff;
+    text-align: center;
+}
+
+.create-form label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.create-form input {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.create-form button {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    padding: 15px;
+    border-radius: 45px;
+    border: #b934ca 5px solid;
+}
+
+.edit-form h1 {
+    color: #646cff;
+    text-align: center;
+}
+
+.edit-form label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.edit-form input {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.edit-form button {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    padding: 15px;
+    border-radius: 45px;
+    border: #b934ca 5px solid;
+}
+
+.register-form h1 {
+    color: #646cff;
+    text-align: center;
+}
+
+.register-form label {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+.register-form input {
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+.register-form button {
+    font-weight: bolder;
+    font-size: larger;
+}

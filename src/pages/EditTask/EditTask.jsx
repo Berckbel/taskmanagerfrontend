@@ -8,6 +8,8 @@ export const EditTask = () => {
     const { setInputs, descriptionError, titleError, existError } = useTaskInputs({ title, description })
     const [formData, setFormData] = useState(selectedTask)
 
+    console.log(existError)
+
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target
         const newValue = type === 'checkbox' ? checked : value

@@ -4,11 +4,8 @@ export const useTaskInputs = (props = { title: "", description: "" }) => {
     const [inputs, setInputs] = useState({ title: props.title, description: props.description })
     const [errors, setErrors] = useState({ title: null, description: null })
     const isFirstInput = useRef({ title: true, description: true })
-    const existError = useRef(true)
 
     useEffect(() => {
-
-        existError.current = true
 
         if (isFirstInput.current.title) {
             isFirstInput.current.title = inputs.title === ""
@@ -53,7 +50,6 @@ export const useTaskInputs = (props = { title: "", description: "" }) => {
         }
 
         setErrors(prev => ({ ...prev, description: null }))
-        existError.current = false
 
     }, [inputs])
 
@@ -62,7 +58,7 @@ export const useTaskInputs = (props = { title: "", description: "" }) => {
         decriptionInput: inputs.description,
         titleError: errors.title,
         descriptionError: errors.description,
-        existError: existError.current,
+        existError: Boolean(errors.title || errors.description),
         setInputs,
     }
 

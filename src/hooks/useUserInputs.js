@@ -4,11 +4,8 @@ export const useUserInputs = (props = { isRegister: false }) => {
     const [inputs, setInputs] = useState({ email: "", password: "", re_password: "" })
     const [errors, setErrors] = useState({ email: null, password: null, re_password: null })
     const isFirstInput = useRef({ email: true, password: true, re_password: true })
-    const existError = useRef(true)
 
     useEffect(() => {
-
-        existError.current = true
 
         if (isFirstInput.current.email) {
             isFirstInput.current.email = inputs.email === ""
@@ -78,15 +75,13 @@ export const useUserInputs = (props = { isRegister: false }) => {
             setErrors(prev => ({ ...prev, re_password: null }))
         }
 
-        existError.current = false
-
     }, [inputs])
 
     return {
         emailError: errors.email,
         passwordError: errors.password,
         rePasswordError: errors.re_password,
-        existError: existError.current,
+        existError: Boolean(errors.email || errors.password || errors.re_password),
         setInputs,
     }
 }

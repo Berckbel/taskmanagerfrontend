@@ -59,8 +59,6 @@ export const useUserInputs = (props = { isRegister: false }) => {
 
         setErrors(prev => ({ ...prev, password: null }))
 
-        console.log(props.isRegister)
-
         if (props.isRegister) {
             if (isFirstInput.current.re_password) {
                 isFirstInput.current.re_password = inputs.re_password === ""
